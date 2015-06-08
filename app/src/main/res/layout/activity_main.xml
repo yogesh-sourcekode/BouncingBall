@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/rlayout"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <AbsoluteLayout
+        android:id="@+id/absolute"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" >
+
+        <RelativeLayout
+            android:id="@+id/rlParent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="500dp">
+            <ImageView
+                android:id="@+id/imgball"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ball" />
+        </RelativeLayout>>
+
+        <RelativeLayout
+            android:id="@+id/relayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/imgball2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ball" />
+        </RelativeLayout>>
+
+
+    </AbsoluteLayout>
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/butstart"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/butstop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DoubleStart"
+        android:textSize="12dp"
+        android:id="@+id/DStart"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/butstart" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DoubleStop"
+        android:textSize="12dp"
+        android:id="@+id/Dstop"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/DStart" />
+
+
+
+</RelativeLayout>
